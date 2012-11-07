@@ -1,0 +1,21 @@
+Apps
+    temperatureControl
+        T̶e̶m̶e̶r̶a̶t̶u̶r̶e̶ ̶s̶e̶n̶s̶o̶r̶
+        A̶r̶d̶u̶i̶n̶o̶ ̶s̶o̶f̶t̶w̶a̶r̶e̶
+        L̶o̶g̶g̶i̶n̶g̶ ̶p̶r̶o̶c̶e̶s̶s̶
+        API hook
+        Page view
+    kegTracker
+        Flow sensor
+        Arduino software
+        Logging process
+        API hook
+        Page view
+    accessControl
+        Card swiper/RFID reader
+        Arduino software
+        Loggin process
+        API hook
+        Page view
+
+

@@ -1,0 +1,43 @@
+/PintsPulled
+	/By
+		/UserName
+		/UserName/UserName...
+	/From
+		/Style
+		/Recipe
+		/Keg
+/History
+/Recipe
+/KegControl
+    /temperature
+
+Tables
+	Type
+
+	Style
+		FK: 	Type
+		MM:		Recipes
+		Int:	Amount Consumed
+	
+	Recipe
+		Int:	Amount Consumed
+		FK:		Style
+		Int:	Rating
+
+	Keg
+		FK:		Style
+		FK:		Recipe
+		Int:	Amount Left
+
+	Users
+		MM:		Amount Comsumed (Style)
+		MM:		Amount Consumed (Recipe)
+
+    Recipes
+        Char:   Recipe name
+        MVF:    Ingredients
+        MVF:    Procedure
+        
+MVF: Multi Value Field
+
+
