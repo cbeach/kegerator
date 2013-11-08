@@ -1,0 +1,14 @@
+
+
+
+
+
+.build/alamode/src/temp_control.cpp : src/temp_control.ino
+	@mkdir -p .build/alamode/src
+	@echo [93msrc/temp_control.ino[0m
+	@/usr/local/bin/ino preproc  -o $@ $^
+
+
+all : .build/alamode/src/temp_control.cpp
+	@true
+

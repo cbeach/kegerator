@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ino clean && ino build -m alamode && sudo ino upload -m alamode -p /dev/ttyS0
