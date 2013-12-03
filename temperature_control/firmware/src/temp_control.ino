@@ -14,6 +14,8 @@ int max_temp = 0;
 void setup() {
     pinMode(LED_PIN, OUTPUT);
     pinMode(KEGERATOR_SSR, OUTPUT);
+    set_min_temp(274);
+    set_max_temp(303);
     min_temp = (EEPROM.read(MIN_TEMP_EEPROM_ADDR) << 8) | EEPROM.read(MIN_TEMP_EEPROM_ADDR + 1);
     max_temp = (EEPROM.read(MAX_TEMP_EEPROM_ADDR) << 8) | EEPROM.read(MAX_TEMP_EEPROM_ADDR + 1);
 
@@ -55,7 +57,12 @@ int process_commands(char * commands) {
 }
 
 int read_temperature() {
-    return analogRead(TEMPERATURE_INPUT);
+    int temp = 0;
+    for(int i = 0; i < 10; i++) {
+        temp += analogRead(TEMPERATURE_INPUT);
+    }
+    temp = temp / 10;
+    return temp;
 }
 
 void set_min_temp(int temp) {
