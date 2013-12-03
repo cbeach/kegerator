@@ -1,0 +1,4 @@
+*.a
+temperature_control/firmware/.build/*
+*.swp
+*.pyc
